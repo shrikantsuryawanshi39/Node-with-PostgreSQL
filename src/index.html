@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    input,
+    button {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    #users {
+      margin-top: 20px;
+    }
+
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    td,
+    th {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Add a New User</h3>
+  <input type="number" id="id" placeholder="User ID">
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <button onclick="addUser()">Submit</button>
+
+  <h3>Show All Users</h3>
+  <button onclick="getUsers()">Load Users</button>
+  <h3>Delete User</h3>
+  <input type="text" id="deleteInput" placeholder="Enter User ID or Name">
+  <button onclick="deleteUser()">Delete</button>
+
+  <div id="users"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
